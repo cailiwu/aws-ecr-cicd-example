@@ -25,5 +25,5 @@ jobs:
         ECR_REPOSITORY_NAME: ${{ secrets.AWS_ECR_REPISTORY_NAME }}
         IMAGE_TAG: 1.0.0
       run: |
-        docker build -t $ECR_REGISTRY_URL/$ECR_REPOSITORY_NAME:LATEST .
-        docker push $ECR_REGISTRY_URL/$ECR_REPOSITORY_NAME:LATEST
+        docker build -t $ECR_REGISTRY_URL/$ECR_REPOSITORY_NAME:latest .
+        docker push $ECR_REGISTRY_URL/$ECR_REPOSITORY_NAME:latest
